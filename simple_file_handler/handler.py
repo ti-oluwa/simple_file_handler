@@ -573,7 +573,8 @@ class FileHandler:
         '''
         Writes the content to the file.
 
-        :param content (Any): The content to write to the file
+        :param content (Any): The content to write to 
+        the file (mostly byte content)
         '''
         # pkl = pickle.dumps(content).decode(self.encoding)
         # self.file.write(pkl)
