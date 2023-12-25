@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "simple_file_handler.__version__"}
+
+[project]
+name = "simple_file_handler"
+dynamic = ["version"]
+authors = [
+  { name="ti-oluwa", email="tioluwa.dev@gmail.com" },
+]
+maintainers = [
+  { name="ti-oluwa", email="tioluwa.dev@gmail.com" },
+]
+description = "An easy to use interface for basic file handling operations."
+keywords = [
+  "file",
+  "file-handling",
+  "file-handler",
+  "file-handlers",
+  "file-handling-operations",
+  "file-handling-operation",
+  "write-to-file",
+  "read-from-file",
+  "copy-file",
+  "move-file",
+  "delete-file",
+]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Natural Language :: English",
+    "Typing :: Typed",
+]
+dependencies = [
+    'toml',
+    'pyyaml',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ti-oluwa/simple_file_handler"
+"Bug Tracker" = "https://github.com/ti-oluwa/simple_file_handler/issues"
+"Repository" = "https://github.com/ti-oluwa/simple_file_handler"
